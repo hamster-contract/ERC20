@@ -9,7 +9,7 @@ import "../node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/extensio
 import "../node_modules/@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 
 /// @custom:security-contact ltmuyuan@163.com
-contract MyToken is Initializable, ERC20Upgradeable, PausableUpgradeable, AccessControlUpgradeable, ERC20PermitUpgradeable, ERC20VotesUpgradeable {
+contract ERC20 is Initializable, ERC20Upgradeable, PausableUpgradeable, AccessControlUpgradeable, ERC20PermitUpgradeable, ERC20VotesUpgradeable {
     bytes32 public constant PAUSER_ROLE = keccak256("PAUSER_ROLE");
 
     /// @custom:oz-upgrades-unsafe-allow constructor
