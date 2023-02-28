@@ -1,10 +1,10 @@
-const MyToken = artifacts.require("MyToken");
+const MyERC20 = artifacts.require("MyERC20");
 
-contract("MyToken", accounts => {
+contract("MyERC20", accounts => {
     let myToken;
 
     before(async () => {
-        myToken = await MyToken.new();
+        myToken = await MyERC20.new();
     });
 
     it("has correct name", async () => {
